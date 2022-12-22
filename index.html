@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Football Team</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- main css link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- banner section -->
+        <div class="banner_section">
+            <div class="banner_info">
+                <h1>Make Your Team</h1>
+                <p>Select your best 5 team player For FIFA 2022. There is no compromise to have best player<br> on your team. Your Team Is your Pride. Select Best Player From Here. And You Should <br>Get Ready To Win FIFA 2022.</p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <!-- card section one -->
+        <section>
+            <div class="row row-cols-1  g-4">
+                <div class="col-md-9">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <!-- card-1  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="Images/Body-images/img-1.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Lionel Messi</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- card-2  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Neymar Jr</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card-3  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-3.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Kylian Mbappé</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Select Player card -->
+                <div class="col-md-3">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white fw-bold fs-3">Select Player</h5> 
+                                <table class="table text-white table-borderless">
+                                    <tbody id="player-added">
+                                        <!-- Added Player will be Show Here -->
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card section two -->
+        <section>
+            <div class="row row-cols-1   g-4 mt-2">
+                <div class="col-md-9">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <!-- card-4  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-4.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Vítor Machado</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-5  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-5.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Sergio Ramos</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-6  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-6.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Renato Sanches</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-7  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-1.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Lionel Messi</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-8  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Neymar Jr</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-9  -->
+                        <div class="col">
+                            <div class="card ">
+                                <img src="images/Body-images/img-3.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title text-white">Kylian Mbappé</h5>
+                                    <div class=" d-flex justify-content-center text-muted ">
+                                        <p class="me-4 ">36 Goals</p>
+                                        <p>120 Assist</p>
+                                    </div>
+                                    <button href="#" class="btn btn-primary mt-2" onClick='addPlayer(this)'>SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Budget card -->
+
+                <div class="col-md-3">
+                    <div class="card p-3 ">
+                        <h3 class="text-center text-white">Budget</h3>
+                        <div class="d-flex budg_info">
+                            <h6 class="text-muted">Par Player</h6>
+                            <input id="player-field" class="budget_btn" type="text">
+                        </div>
+                        <button id="calculate-btn" href="#" class="btn btn-primary" >Calculate</button>
+                        <h6 class="text-muted mt-2">Player Expenses = <span  id="player-expense" class="ms-2">000</span></h6>
+                        <div class="d-flex budg_info">
+                            <h6 class="text-muted">Manager</h6>
+                            <input id="manager-field" class="budget_btn" type="text">
+                        </div>
+                        <div class="d-flex budg_info">
+                            <h6 class="text-muted">Coach</h6>
+                            <input id="coach-field" class="budget_btn" type="text">
+                        </div>
+                        <button id="calculate-total" href="#" class="btn btn-primary">Calculate Total</button>
+                        <h6 class="text-muted total_line mt-2">Total = <span id="total-value" class="ms-5 total_span">000</span></h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer  -->
+    <footer class="border-top">
+            <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Js Link -->
+    <script src="js/player.js"></script>
+    <script src="js/budget.js"></script>
+    <script src="js/total.js"></script>
+</body>
+
+</html>
